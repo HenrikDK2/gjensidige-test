@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Gjensidige Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I have hosted the project on [Netlify](https://serene-kataifi-dea24d.netlify.app/)
 
 ## Available Scripts
 
