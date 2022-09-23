@@ -1,6 +1,6 @@
 # Gjensidige Test
 
-I have hosted the project on [Netlify](https://serene-kataifi-dea24d.netlify.app/)
+A production build of the project is hosted at [Netlify](https://serene-kataifi-dea24d.netlify.app/)
 
 ## Available Scripts
 
