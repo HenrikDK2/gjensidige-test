@@ -6,12 +6,7 @@ import { IRailway } from "./types/index";
 import { EstimatedCall } from "./components/EstimatedCall";
 import { queueFetch } from "./utils";
 import { TestButton } from "./components/TestButton";
-
-const endpoint = "https://api.entur.io/journey-planner/v3/graphql";
-const headers = {
-  "Content-Type": "application/json",
-  "ET-Client-Name": "henrik-gjensidige_test",
-};
+import { endpoint, headers } from "./index";
 
 const Section = styled.section`
   padding: 2rem;

@@ -2,12 +2,7 @@ import { FC } from "react";
 import styled from "styled-components";
 import { RAILWAY_QUERY } from "../queries";
 import { queueFetch } from "../utils";
-
-const endpoint = "https://api.entur.io/journey-planner/v3/graphql";
-const headers = {
-  "Content-Type": "application/json",
-  "ET-Client-Name": "henrik-gjensidige_test",
-};
+import { endpoint, headers } from "../index";
 
 const fetchLoop = () => {
   for (let i = 0; i < 10; i++) {
