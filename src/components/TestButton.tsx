@@ -10,76 +10,15 @@ const headers = {
 };
 
 const fetchLoop = () => {
-  queueFetch(endpoint, {
-    method: "POST",
-    headers,
-    body: JSON.stringify({
-      query: RAILWAY_QUERY,
-    }),
-  });
-  queueFetch(endpoint, {
-    method: "POST",
-    headers,
-    body: JSON.stringify({
-      query: RAILWAY_QUERY,
-    }),
-  });
-  queueFetch(endpoint, {
-    method: "POST",
-    headers,
-    body: JSON.stringify({
-      query: RAILWAY_QUERY,
-    }),
-  });
-  queueFetch(endpoint, {
-    method: "POST",
-    headers,
-    body: JSON.stringify({
-      query: RAILWAY_QUERY,
-    }),
-  });
-  queueFetch(endpoint, {
-    method: "POST",
-    headers,
-    body: JSON.stringify({
-      query: RAILWAY_QUERY,
-    }),
-  });
-  queueFetch(endpoint, {
-    method: "POST",
-    headers,
-    body: JSON.stringify({
-      query: RAILWAY_QUERY,
-    }),
-  });
-  queueFetch(endpoint, {
-    method: "POST",
-    headers,
-    body: JSON.stringify({
-      query: RAILWAY_QUERY,
-    }),
-  });
-  queueFetch(endpoint, {
-    method: "POST",
-    headers,
-    body: JSON.stringify({
-      query: RAILWAY_QUERY,
-    }),
-  });
-  queueFetch(endpoint, {
-    method: "POST",
-    headers,
-    body: JSON.stringify({
-      query: RAILWAY_QUERY,
-    }),
-  });
-  queueFetch(endpoint, {
-    method: "POST",
-    headers,
-    body: JSON.stringify({
-      query: RAILWAY_QUERY,
-    }),
-  });
+  for (let i = 0; i < 10; i++) {
+    queueFetch(endpoint, {
+      method: "POST",
+      headers,
+      body: JSON.stringify({
+        query: RAILWAY_QUERY,
+      }),
+    });
+  }
 };
 
 const Button = styled.button`
