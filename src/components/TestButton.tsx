@@ -82,7 +82,7 @@ const fetchLoop = () => {
   });
 };
 
-const TestingButton = styled.button`
+const Button = styled.button`
   padding: 1rem 2rem;
   transition: all 0.15s ease;
   background-color: var(--primary-color);
@@ -99,7 +99,7 @@ const TestingButton = styled.button`
 `;
 
 export const TestButton: FC = () => (
-  <TestingButton onClick={() => fetchLoop()}>
-    Make 10 request to API (Test queueFetch)
-  </TestingButton>
+  <Button onClick={() => fetchLoop()}>
+    Send 10 request to API (Test queueFetch)
+  </Button>
 );
