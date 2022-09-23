@@ -39,7 +39,6 @@ export const App: FC = () => {
   const [data, setData] = useState<IRailway>();
 
   useEffect(() => {
-    console.log("test");
     (async () => {
       try {
         const res = await queueFetch(endpoint, {
