@@ -28,6 +28,7 @@ const EstimatedCallList = styled.ol`
   padding: 0;
   list-style: none;
   border-top: 1px solid #dddddd;
+  min-height: 651px;
 `;
 
 export const App: FC = () => {
@@ -60,7 +61,7 @@ export const App: FC = () => {
   return (
     <main>
       <Section>
-        <Heading>Details - {data?.stopPlace.name}</Heading>
+        <Heading>Stop place details - {data?.stopPlace.name}</Heading>
         <EstimatedCallList>
           {data?.stopPlace.estimatedCalls.map((call) => {
             const id = uuidv4();
