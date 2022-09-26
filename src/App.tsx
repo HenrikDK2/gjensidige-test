@@ -44,7 +44,7 @@ export const App: FC = () => {
           }),
         });
 
-        if (res) {
+        if (res?.status === 200) {
           const newData = await res.json();
           setData(newData["data"]);
         }

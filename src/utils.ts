@@ -44,7 +44,7 @@ class QueueFetch {
   isWaitingForResponse: boolean = false;
   queue: Queue[] = [];
 
-  async request(req: Queue): Promise<any> {
+  async request(req: Queue): Promise<Response | undefined> {
     try {
       if (this.isWaitingForResponse) {
         this.queue.push(req);
@@ -71,7 +71,7 @@ class QueueFetch {
         return res;
       }
     } catch (error) {
-      return error;
+      console.error(error);
     }
   }
 }
