@@ -41,6 +41,9 @@ export const App: FC = () => {
           headers,
           body: JSON.stringify({
             query: RAILWAY_QUERY,
+            variables: {
+              id: "NSR:StopPlace:4000",
+            },
           }),
         });
 
