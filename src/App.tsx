@@ -28,7 +28,7 @@ const EstimatedCallList = styled.ol`
   padding: 0;
   list-style: none;
   border-top: 1px solid #dddddd;
-  min-height: 651px;
+  min-height: 650px;
 `;
 
 export const App: FC = () => {
