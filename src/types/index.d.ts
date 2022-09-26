@@ -11,9 +11,14 @@ export interface IEstimatedCall {
   aimedArrivalTime: Date;
   expectedArrivalTime: Date;
   cancellation: boolean;
+  destinationDisplay: IDestinationDisplay;
   forBoarding: boolean;
   forAlighting: boolean;
   serviceJourney: IServiceJourney;
+}
+
+export interface IDestinationDisplay {
+  frontText: string;
 }
 
 export interface IServiceJourney {

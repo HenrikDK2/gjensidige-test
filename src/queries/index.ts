@@ -8,6 +8,9 @@ query($id:String!){
       cancellation
       forBoarding
       forAlighting
+      destinationDisplay{
+        frontText
+      }
       serviceJourney {
         journeyPattern {
           line {

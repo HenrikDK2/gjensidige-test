@@ -110,7 +110,7 @@ export const EstimatedCall: FC<IEstimatedCallProps> = ({
               {delayStr !== "-0" && delayStr}
             </Delay>
           </ArrivalTime>
-          {estimatedCall.serviceJourney.journeyPattern.line.name}
+          {estimatedCall.destinationDisplay.frontText}
         </Wrapper>
         <AiFillCaretDown
           aria-label="Caret"
@@ -137,6 +137,10 @@ export const EstimatedCall: FC<IEstimatedCallProps> = ({
               estimatedCall.expectedArrivalTime,
               "shortExpectedArrival"
             )}
+          </li>
+          <li>
+            Service route:{" "}
+            {capitalize(estimatedCall.serviceJourney.journeyPattern.line.name)}
           </li>
           <li>Cancelled: {capitalize(`${estimatedCall.cancellation}`)}</li>
           <li>For boarding: {capitalize(`${estimatedCall.forBoarding}`)}</li>
