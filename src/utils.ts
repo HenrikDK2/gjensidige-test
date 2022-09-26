@@ -35,16 +35,16 @@ export const arrivalDelayInMinutes = (
 
 // Step 2 example --------------------------------------------------
 
-interface Queue {
+interface Request {
   input: RequestInfo;
   init: RequestInit | undefined;
 }
 
 class QueueFetch {
   isWaitingForResponse: boolean = false;
-  queue: Queue[] = [];
+  queue: Request[] = [];
 
-  async request(req: Queue): Promise<Response | undefined> {
+  async request(req: Request): Promise<Response | undefined> {
     try {
       if (this.isWaitingForResponse) {
         this.queue.push(req);
