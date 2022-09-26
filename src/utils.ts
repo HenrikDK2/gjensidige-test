@@ -49,7 +49,7 @@ class QueueFetch {
       if (this.isWaitingForResponse) {
         this.queue.push(req);
 
-        return await new Promise((resolve) => {
+        return await new Promise((resolve, reject) => {
           const timer = setInterval(async () => {
             if (!this.isWaitingForResponse) {
               clearInterval(timer);
@@ -59,7 +59,7 @@ class QueueFetch {
                 this.queue = [];
                 resolve(await this.request(req));
               } else {
-                console.warn("Request was discarded");
+                reject("Request was discarded");
               }
             }
           }, 250);
